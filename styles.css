@@ -1,0 +1,20 @@
+:root {
+  --light: #EEEEEE;
+  --gray: #686D76;
+  --dark: #373A40;
+  --purple: #7c3aed;
+  --orange: #DC5F00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--light);
+  width: 100vw;
+  height: 100vh;
+}
