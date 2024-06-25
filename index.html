@@ -17,7 +17,95 @@
 </head>
 
 <body>
-  <h1>hello world!</h1>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="#">
+        KSJ
+      </a>
+    </div>
+    <div class="nav">
+      <a href="#">
+        <p>Home</p>
+      </a>
+      <a href="#">
+        <p>About</p>
+      </a>
+      <a href="#">
+        <p>Work</p>
+      </a>
+      <div class="contactBttn">
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+    <div class="toggleBttn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="dropdown_menu">
+      <a href="#">
+        <p>Home</p>
+      </a>
+      <a href="#">
+        <p>About</p>
+      </a>
+      <a href="#">
+        <p>Work</p>
+      </a>
+      <div class="contactBttn">
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="introduction">
+      <!-- INTRODUCTION FOR NOW -->
+      <h1>Bring your<br> brand to life<br> with our<br> help</h1>
+      <p>In your role as a professional web developer, you're<br> up for just about any website-building challeng.</p>
+
+      <div class="introBttn">
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+    <div class="heroPhoto">
+      <img src="images/hero.png" alt="heroImg">
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="me">
+      <h1>About me</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam accusantium quasi fuga consequuntur
+        voluptate quos dolore corrupti ab tempore facere!</p>
+    </div>
+    <div class="profession">
+      <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, in? Aliquam quas et nulla architecto voluptas
+        mollitia molestias odit possimus?</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime repudiandae quas officia vel nesciunt
+        quisquam, ducimus ad non! Repellat non quibusdam perspiciatis! Rerum cumque ut veniam, corrupti atque dolor.
+        Quo.</p>
+      <div class="linkedInBttn">
+        <a href="#">Linkedin Profile</a>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    const toggleBtn = document.querySelector('.toggleBttn');
+    const toggleBtnIcon = document.querySelector('.toggleBttn i');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open');
+      const isOpen = dropDownMenu.classList.contains('open');
+
+      toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+  </script>
 </body>
 
 </html>
